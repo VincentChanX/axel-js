@@ -1,0 +1,40 @@
+{
+  "name": "axel-js",
+  "version": "0.1.0",
+  "description": "A lightweight download accelerator. Similar to axel.",
+  "main": "./lib/axel.js",
+  "bin": {
+    "axel-js": "./bin/index.js"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "cli-color-tty": "^2.0.0",
+    "extend": "^3.0.0",
+    "option-parser": "^0.1.3",
+    "prettyjson": "^1.1.3",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./bin/index.js -h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VincentChanX/axel-js.git"
+  },
+  "keywords": [
+    "axel",
+    "download",
+    "file",
+    "http",
+    "https"
+  ],
+  "author": "vincentchan <hci.vincentchan@gmail.com> (https://github.com/VincentChanX)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/VincentChanX/axel-js/issues"
+  },
+  "homepage": "https://github.com/VincentChanX/axel-js#readme"
+}
