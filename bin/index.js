@@ -22,18 +22,25 @@ optParser.addOption('n', 'num-connections', 'Specify maximum number of connectio
     }
 });
 optParser.addOption('o', 'output', 'Specify local output file').argument('<OUTPUT>').action((value) => {
-    options.output = value
+    options.output = value;
 });
 optParser.addOption('H', 'header', 'Add header string').argument('<HEADER>').action((value) => {
-    options.header.push(value)
+    options.header.push(value);
+});
+optParser.addOption('U', 'user-agent', 'Set user agent').argument('<USER-AGENT>').action((value) => {
+    options.header.push('User-Agent:' + value);
 });
 optParser.addOption('v', 'verbose', 'More status information').action(() => {
-    options.verbose = true
+    options.verbose = true;
 });
 optParser.addOption('q', 'quiet', ' No output to stdout').action(() => {
     options.quiet = true;
 });
 optParser.addOption('h', 'help', 'Display this help message').action(optParser.helpAction('[options] url'));
+optParser.addOption('V', 'version', 'Version information').action(() => {
+    console.log('axel-js version ' + constants.VERSION + ' (' + process.platform + ')');
+    process.exit(0);
+});
 
 link = optParser.parse();
 if (link.length == 0) {
@@ -44,5 +51,5 @@ axel.download(link[0], options).then((data) => {
     console.log(data)
     fmt.printMessage('%s download finished!', link[0]);
 }).catch((error) => {
-    fmt.printMessage('%', error.toString());
+    fmt.printMessage('%s', error.toString());
 });
