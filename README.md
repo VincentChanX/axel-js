@@ -5,7 +5,7 @@ A lightweight download accelerator. Similar to axel.axel-js tries to accelerate 
 #Install
 
 ```
-npm install node-axel
+npm install axel-js
 ```
 
 #Usage
@@ -45,7 +45,7 @@ returns a promise object
 #CLI
 
 ```
-Usage:node-axel [options] url
+Usage:axel-js [options] url
 
 Available Options:
 -n, --num-connections <NUM-CONNECTION>
