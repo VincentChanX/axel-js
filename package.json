@@ -1,6 +1,6 @@
 {
   "name": "axel-js",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "A lightweight download accelerator. Similar to axel.",
   "main": "./lib/axel.js",
   "bin": {
