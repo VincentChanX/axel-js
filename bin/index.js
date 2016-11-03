@@ -51,5 +51,6 @@ axel.download(link[0], options).then((data) => {
     console.log(data)
     fmt.printMessage('%s download finished!', link[0]);
 }).catch((error) => {
-    fmt.printMessage('%s', error.toString());
+    console.log(error);
+    // fmt.printMessage('%s', error.toString());
 });
