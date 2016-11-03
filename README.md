@@ -1,6 +1,6 @@
 #axel-js
 
-A lightweight download accelerator. Similar to axel.axel-js tries to accelerate the downloading process by using multiple connections for one file and supports HTTP and HTTPS protocols.
+A lightweight download accelerator. Similar to [axel](https://github.com/eribertomota/axel).axel-js tries to accelerate the downloading process by using multiple connections for one file and supports HTTP and HTTPS protocols.
 
 #Install
 
