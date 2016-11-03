@@ -21,10 +21,13 @@ axel.download('http://nginx.org/download/nginx-1.11.5.tar.gz', {
     header: []
 }).then((data) => {
     //download finished
-    console.log(data.url);
-    console.log(data.size);
-    console.log(data.startTime);
-    console.log(data.endTime);
+    console.log(data);
+    // => {
+    // url: '<string>',
+    // size: <number>,
+    // startTime: '<Date>',
+    // endTime: '<Date>'
+    //}
 }).catch((error) => {
     //an error occurred
 });
@@ -41,6 +44,10 @@ axel.download('http://nginx.org/download/nginx-1.11.5.tar.gz', {
     * output
 
 returns a promise object
+
+##getErrorCode()
+
+returns an object containing error code
 
 #CLI
 
