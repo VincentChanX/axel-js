@@ -1,14 +1,14 @@
-#axel-js
+# axel-js
 
 A lightweight download accelerator. Similar to [axel](https://github.com/eribertomota/axel).axel-js tries to accelerate the downloading process by using multiple connections for one file and supports HTTP and HTTPS protocols.
 
-#Install
+# Install
 
 ```
 npm install axel-js
 ```
 
-#Usage
+# Usage
 
 ```javascript
 var axel = require('axel-js');
@@ -32,9 +32,9 @@ axel.download('http://nginx.org/download/nginx-1.11.5.tar.gz', {
     //an error occurred
 });
 ```
-#API
+# API
 
-##download(url,options)
+## download(url,options)
 
 * **url**  string of the file URL to download
 * **options**  object with options
@@ -45,11 +45,11 @@ axel.download('http://nginx.org/download/nginx-1.11.5.tar.gz', {
 
 returns a promise object
 
-##getErrorCode()
+## getErrorCode()
 
 returns an object containing error code
 
-#CLI
+# CLI
 
 ```
 Usage:axel-js [options] url
